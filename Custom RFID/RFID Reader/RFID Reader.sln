@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFID Reader", "RFID Reader\RFID Reader.csproj", "{AF67AE20-C66C-48D0-818F-DD4A4FB7C257}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parallax28340", "..\Parallax28340\Parallax28340.csproj", "{618F4724-E31B-45AA-BF6F-FB61EAC1F736}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF67AE20-C66C-48D0-818F-DD4A4FB7C257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF67AE20-C66C-48D0-818F-DD4A4FB7C257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF67AE20-C66C-48D0-818F-DD4A4FB7C257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF67AE20-C66C-48D0-818F-DD4A4FB7C257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{618F4724-E31B-45AA-BF6F-FB61EAC1F736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{618F4724-E31B-45AA-BF6F-FB61EAC1F736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{618F4724-E31B-45AA-BF6F-FB61EAC1F736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{618F4724-E31B-45AA-BF6F-FB61EAC1F736}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
