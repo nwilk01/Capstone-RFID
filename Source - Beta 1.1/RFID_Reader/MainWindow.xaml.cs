@@ -72,7 +72,7 @@ namespace RFID_Reader
                 
                 if (add.Visible) 
                 {
-                    
+                    add.textBox1.Text = RFID;
                 }
                 else {
                     /* Comparing whether a valid RFID */

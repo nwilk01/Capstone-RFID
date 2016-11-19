@@ -30,14 +30,19 @@ namespace RFID_Reader
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            //70005A4954
         }
 
         private void button1_Click(object sender, EventArgs e)
         {//add
-            
-           
-            
+            XmlDocument doc = new XmlDocument();
+            doc.Load("Valid.xml");
+            XmlNode RFID_Tag = doc.CreateElement("RFID_Tag");
+            XmlAttribute attribute = doc.CreateAttribute("ID");
+            attribute.Value = textBox1.Text;
+            RFID_Tag.Attributes.Append(attribute);
+            System.Windows.MessageBox.Show(attribute.Value);
+            doc.Save("Valid.xml");
         }
 
         private void button3_Click(object sender, EventArgs e)
