@@ -20,20 +20,17 @@ namespace RFID_Reader
         {
             InitializeComponent();
             
-            
-            XmlReader reader = XmlReader.Create("Valid.xml");
-            XmlDocument doc = new XmlDocument();
-            doc.Load("Valid.xml");
-            XmlNodeList IDnodes = doc.SelectNodes("//Valid_List/RFID_Tag");
-            foreach(XmlNode IDnode in IDnodes)
-            {
-                comboBox1.Items.Add(IDnode.Attributes["ID"].Value);
-            }
+                XmlReader reader = XmlReader.Create("Valid.xml");
+                XmlDocument doc = new XmlDocument();
+                doc.Load("Valid.xml");
+                XmlNodeList IDnodes = doc.SelectNodes("//Valid_List/RFID_Tag");
+                foreach (XmlNode IDnode in IDnodes)
+                {
+                    comboBox1.Items.Add(IDnode.Attributes["ID"].Value);
+                }
 
-           
-
-            
                 reader.Close();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -62,6 +59,12 @@ namespace RFID_Reader
                     doc.Save("Valid.xml");
                 }
             }
+        }
+
+
+        private void Form2_Load(Object sender, EventArgs e)
+        {
+            MessageBox.Show("Form Opened");
         }
     }
 }

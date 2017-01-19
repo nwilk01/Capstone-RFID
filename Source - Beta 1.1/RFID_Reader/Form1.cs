@@ -37,11 +37,13 @@ namespace RFID_Reader
         {//add
             XmlDocument doc = new XmlDocument();
             doc.Load("Valid.xml");
-            XmlNode RFID_Tag = doc.CreateElement("RFID_Tag");
-            XmlAttribute attribute = doc.CreateAttribute("ID");
-            attribute.Value = textBox1.Text;
-            RFID_Tag.Attributes.Append(attribute);
-            System.Windows.MessageBox.Show(attribute.Value);
+            XmlNode rootNode = doc.SelectSingleNode("//Valid_List");
+            doc.AppendChild(rootNode);
+            XmlNode RFIDElement = doc.CreateElement("RFID_Tag");
+            XmlAttribute ID = doc.CreateAttribute("ID");
+            ID.Value = textBox1.Text;
+            RFIDElement.Attributes.Append(ID);
+            rootNode.AppendChild(RFIDElement);
             doc.Save("Valid.xml");
         }
 

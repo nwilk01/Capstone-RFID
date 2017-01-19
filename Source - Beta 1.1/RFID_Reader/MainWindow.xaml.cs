@@ -20,7 +20,7 @@ namespace RFID_Reader
         
         Parallax28340Device RFID = new Parallax28340Device();
         Form1 add = new Form1();
-        Form2 delete = new Form2();
+        
 
         SoundPlayer Mplayer         = new SoundPlayer();
         FileStream wavFile          = null;
@@ -152,6 +152,7 @@ namespace RFID_Reader
         }
         private void Delete_Tag(object sender, RoutedEventArgs e)
         {
+            Form2 delete = new Form2();
             delete.Show();
         }
         private void Add_Tag(object sender, RoutedEventArgs e)
